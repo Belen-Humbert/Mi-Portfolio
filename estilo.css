@@ -570,3 +570,74 @@ body {
         width: 25%;
     }
 }
+
+/* Estilos para la sección de cursos y certificaciones */
+.cursos {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.cursos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2193b0;
+}
+
+.contenedor-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 30px;
+}
+
+.curso {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #8d8d8d;
+    border-radius: 10px;
+}
+
+.curso img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+.info-curso {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.info-curso h3 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.info-curso span {
+    color: #8d8d8d;
+    display: inline-block;
+    border: 2px solid #8d8d8d;
+    margin: 0 3px;
+    padding: 5px;
+}
+
+.info-curso a {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #007be5;
+    font-weight: bold;
+}
+
+.curso:hover .info-curso {
+    opacity: 1;
+    top: 0;
+}
