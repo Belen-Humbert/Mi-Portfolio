@@ -285,76 +285,65 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
-/* seccion HABILIDADES */
-.habilidades{
+/* Sección Habilidades */
+
+.habilidades {
+    background-color: none;
+    color: #fff;
+    padding: 60px 0 40px; /* Ajusta el padding-bottom */
+    position: static; /* Cambiado de relative si no necesitas el desplazamiento */
+    margin-bottom: 0; /* Elimina cualquier margen adicional */
+}
+
+.trabajos {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    margin-top: 20px; /* Ajusta el margen superior */
+}
+
+
+/*
+.habilidades {
     background-color: none;
     color: #fff;
     padding: 60px 0;
     position: relative;
     top: -100px;
 }
-.habilidades h2{
+*/
+.habilidades h2 {
     text-align: center;
     color: #2193b0;
 }
-.habilidades .contenedor-habi{
+
+.habilidades .contenedor-habi {
     max-width: 1100px;
     margin: auto;
 }
-.habilidades .fila{
-    display: flex;
-    justify-content: space-around;
+
+.categoria {
+    margin-bottom: 40px; /* Espacio entre categorías */
 }
-.score{
-    padding: 10px;
-    margin: auto 0;
-}
-.score .box{
-    width: 100%;
-}
-.score .box h2{
-    display: block;
+
+.categoria h3 {
     text-align: center;
-}
-.score .box .chart{
-    position: relative;
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    line-height: 160px;
-    font-size: 40px;
-    text-align: center;
+    color: #2193b0;
+    margin-bottom: 20px; /* Espacio debajo del título de la categoría */
 }
 
 .logos-tecnologias {
     display: flex;
-    justify-content: center; /* Alinea las imágenes al centro horizontalmente */
-    align-items: center; /* Alinea las imágenes al centro verticalmente */
-    margin-top: 20px; /* Espacio superior */
-    margin-bottom: -100px;
+    flex-wrap: wrap; /* Permite que los íconos se envuelvan en varias líneas si es necesario */
+    justify-content: center; /* Alinea los íconos al centro horizontalmente */
+    align-items: center; /* Alinea los íconos al centro verticalmente */
 }
 
 .logos-tecnologias img {
     width: 50px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 50px; /* Asegura que la altura coincida con el ancho para mantener la proporción */
     margin: 0 10px; /* Espacio entre cada imagen */
-}
-
-
-.logos-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px; /* Aumenta el espacio superior */
-    margin-bottom: 100px; /* Aumenta el espacio inferior */
-}
-
-.logos-skills img {
-    width: 50px;
-    margin: 0 10px;
-}
-.tecnologias h2{
-    text-align: center;
-    color: #2193b0;
+    object-fit: contain; /* Mantiene la proporción de la imagen dentro del área asignada */
 }
 
 
@@ -365,11 +354,13 @@ body {
     left: 0;
 }
 /* SECCION T R A B A J O S */
+/*
 .trabajos{
     max-width: 1100px;
     margin: auto;
     padding: 0 20px;
 }
+    */
 .trabajos h2{
     text-align: center;
     color: #2193b0;
