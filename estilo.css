@@ -513,7 +513,7 @@ body {
 /* Estilos para la sección de cursos y certificaciones */
 .cursos {
     background-color: #f5f5f5;
-    padding: 0 100px;
+    padding: 0 5%;
     margin-top: 100px;
 }
 
@@ -535,6 +535,10 @@ body {
     border: 1px solid #8d8d8d;
     border-radius: 10px;
     height: 230px;
+    .curso {
+    max-width: 100%; /* Asegura que las tarjetas no se expandan más allá del contenedor */
+    }
+    
 }
 
 .curso img {
@@ -582,6 +586,13 @@ body {
 .curso:hover .info-curso {
     opacity: 1;
     top: 0;
+}
+
+@media (max-width: 768px) { /* Ajusta el breakpoint según lo necesites */
+    .contenedor-cursos {
+        grid-template-columns: 1fr;
+        padding: 0 10px; /* Ajusta el padding para dispositivos móviles */
+    }
 }
 
 
