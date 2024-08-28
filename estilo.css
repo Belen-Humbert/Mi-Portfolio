@@ -596,4 +596,50 @@ body {
 }
 
 
-
+footer {
+    margin-top: 40px;
+    background-color: #333;
+    padding: 40px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .contact-buttons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .contact-buttons a i {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .contact-buttons a:hover {
+    background-color: #007be5;
+  }
+  
+  .contact-buttons a:hover i {
+    color: #fff;
+  }
+  
