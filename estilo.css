@@ -8,13 +8,16 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-html {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f6fafc !important; /* El color de fondo deseado */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #f6fafc;
-}
 
 /* SECCION I N I C I O */
 .inicio {
@@ -23,6 +26,7 @@ body {
     background-position: center; /* Centra la imagen en el fondo */
     height: 90vh;
     padding: 0 20px;
+    background-color: #f6fafc;
 }
 
 .inicio .contenido {
@@ -166,11 +170,6 @@ body {
 }
 
 
-/* Archivo: estilo.css */
-
-/* Otros estilos existentes */
-
-/* Estilos para la sección "Sobre Mi" */
 .sobreMi {
     background-color: #f4f4f9; /* Color de fondo suave */
     padding: 60px 20px; /* Espaciado interno */
@@ -221,6 +220,7 @@ body {
     position: relative;
     top: -170px;
     z-index: 10;
+    background-color: #f4f4f9;
 }
 .servicios .fila{
     display: flex;
@@ -234,7 +234,7 @@ body {
 .servicios .fila .col .card{
     border: 1px solid #8d8d8d;
     height: 400px;
-    background-color: #fff;
+    background-color: #f4f4f9;
     padding: 30px;
     border-radius: 20px;
     position: relative;
@@ -288,8 +288,7 @@ body {
 /* Sección Habilidades */
 
 .habilidades {
-    background-color: none;
-    color: #fff;
+    background-color: #f4f4f9;
     padding: 60px 0 40px; /* Ajusta el padding-bottom */
     position: static; /* Cambiado de relative si no necesitas el desplazamiento */
     margin-bottom: 0; /* Elimina cualquier margen adicional */
@@ -300,6 +299,7 @@ body {
     margin: auto;
     padding: 0 20px;
     margin-top: 20px; /* Ajusta el margen superior */
+    background-color: #f4f4f9;
 }
 
 
@@ -642,4 +642,13 @@ footer {
   .contact-buttons a:hover i {
     color: #fff;
   }
+
+.sobreMi,
+.servicios,
+.habilidades,
+.trabajos,
+.cursos {
+    background-color: #f6fafc;
+}
+
   
